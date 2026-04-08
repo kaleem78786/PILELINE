@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2560 1440" width="2560" height="1440">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f23;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e94560;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff6b6b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e94560;stop-opacity:0" />
+      <stop offset="50%" style="stop-color:#e94560;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#e94560;stop-opacity:0" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="textGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="2560" height="1440" fill="url(#bgGrad)"/>
+  
+  <!-- Decorative grid lines -->
+  <line x1="0" y1="360" x2="2560" y2="360" stroke="#e94560" stroke-width="0.5" opacity="0.1"/>
+  <line x1="0" y1="720" x2="2560" y2="720" stroke="#e94560" stroke-width="0.5" opacity="0.1"/>
+  <line x1="0" y1="1080" x2="2560" y2="1080" stroke="#e94560" stroke-width="0.5" opacity="0.1"/>
+  <line x1="640" y1="0" x2="640" y2="1440" stroke="#e94560" stroke-width="0.5" opacity="0.1"/>
+  <line x1="1280" y1="0" x2="1280" y2="1440" stroke="#e94560" stroke-width="0.5" opacity="0.1"/>
+  <line x1="1920" y1="0" x2="1920" y2="1440" stroke="#e94560" stroke-width="0.5" opacity="0.1"/>
+  
+  <!-- Floating neural dots -->
+  <circle cx="200" cy="300" r="3" fill="#e94560" opacity="0.3"/>
+  <circle cx="500" cy="500" r="2" fill="#ff6b6b" opacity="0.2"/>
+  <circle cx="800" cy="200" r="4" fill="#e94560" opacity="0.15"/>
+  <circle cx="1800" cy="350" r="3" fill="#ff6b6b" opacity="0.25"/>
+  <circle cx="2100" cy="600" r="2" fill="#e94560" opacity="0.2"/>
+  <circle cx="2300" cy="250" r="3" fill="#ff6b6b" opacity="0.15"/>
+  <circle cx="350" cy="900" r="2" fill="#e94560" opacity="0.2"/>
+  <circle cx="2200" cy="1000" r="3" fill="#ff6b6b" opacity="0.2"/>
+  
+  <!-- Brain icon (left side) -->
+  <g transform="translate(900, 620) scale(1.5)" filter="url(#glow)" opacity="0.6">
+    <path d="M-8,0 C-8,-80 -100,-100 -100,-40 C-100,-10 -80,10 -70,20 C-85,35 -95,60 -80,85 C-65,110 -30,115 -8,100" 
+          fill="none" stroke="#e94560" stroke-width="3" stroke-linecap="round"/>
+    <path d="M8,0 C8,-80 100,-100 100,-40 C100,-10 80,10 70,20 C85,35 95,60 80,85 C65,110 30,115 8,100" 
+          fill="none" stroke="#e94560" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Main Title -->
+  <text x="1280" y="660" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="120" fill="#ffffff" filter="url(#textGlow)" letter-spacing="8">INNERE ST&#196;RKE</text>
+  
+  <!-- Accent line under title -->
+  <rect x="980" y="690" width="600" height="4" rx="2" fill="url(#accentGrad)"/>
+  
+  <!-- Subtitle -->
+  <text x="1280" y="760" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="300" font-size="36" fill="#aaaacc" letter-spacing="8">BEZIEHUNGSPSYCHOLOGIE &#183; WACHSTUM &#183; HEILUNG</text>
+  
+  <!-- Bottom tagline -->
+  <text x="1280" y="830" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="400" font-size="28" fill="#e94560" letter-spacing="4">Verstehe dich selbst. Ver&#228;ndere deine Beziehungen.</text>
+  
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="2560" height="6" fill="url(#accentGrad)"/>
+  <!-- Bottom accent bar -->
+  <rect x="0" y="1434" width="2560" height="6" fill="url(#accentGrad)"/>
+</svg>
